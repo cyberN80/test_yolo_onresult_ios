@@ -4,6 +4,8 @@ import 'package:permission_handler/permission_handler.dart';
 
 void main() async {
 
+  WidgetsFlutterBinding.ensureInitialized(); // Ensure bindings are initialized
+  
    // Request microphone and camera permissions before starting the app
   final statuses = await [Permission.microphone, Permission.camera].request();
   
