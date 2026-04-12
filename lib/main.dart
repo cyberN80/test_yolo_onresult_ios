@@ -1,7 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:ultralytics_yolo/ultralytics_yolo.dart';
+import 'package:permission_handler/permission_handler.dart';
 
-void main() {
+void main() async {
+
+   // Request microphone and camera permissions before starting the app
+  final statuses = await [Permission.microphone, Permission.camera].request();
+  
+  // Log permission status for debugging
+  debugPrint('Microphone permission: ${statuses[Permission.microphone]}');
+  debugPrint('Camera permission: ${statuses[Permission.camera]}');
+
   runApp(const MyApp());
 }
 
