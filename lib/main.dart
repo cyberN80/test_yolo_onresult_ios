@@ -5,7 +5,7 @@ import 'package:permission_handler/permission_handler.dart';
 void main() async {
 
   WidgetsFlutterBinding.ensureInitialized(); // Ensure bindings are initialized
-  
+
    // Request microphone and camera permissions before starting the app
   final statuses = await [Permission.microphone, Permission.camera].request();
   
@@ -57,8 +57,8 @@ class _MyHomePageState extends State<MyHomePage> {
           children: [ 
             Center( 
               child: YOLOView(
-               // modelPath: 'yolo11n-obb', // 'sustain_yolo11n_obb',
-             //   task: YOLOTask.obb, // Specify the oriented bounding box task
+                //modelPath: 'yolo11n-obb', // 'sustain_yolo11n_obb',
+                //task: YOLOTask.obb, // Specify the oriented bounding box task
                 modelPath: 'yolo11n',
                 task: YOLOTask.detect, 
                 confidenceThreshold: 0.5,

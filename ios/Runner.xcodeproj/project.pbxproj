@@ -12,6 +12,10 @@
 		3B3967161E833CAA004F5970 /* AppFrameworkInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3B3967151E833CAA004F5970 /* AppFrameworkInfo.plist */; };
 		538201CC2F8C56BB004D0AA7 /* sustain_yolo11n_obb.mlpackage in Sources */ = {isa = PBXBuildFile; fileRef = 538201CB2F8C56BB004D0AA7 /* sustain_yolo11n_obb.mlpackage */; };
 		538201CD2F8C56BB004D0AA7 /* sustain_yolo11n_obb.mlpackage in Sources */ = {isa = PBXBuildFile; fileRef = 538201CB2F8C56BB004D0AA7 /* sustain_yolo11n_obb.mlpackage */; };
+		538201D52F8DD0A2004D0AA7 /* yolo11n-obb.mlpackage in Sources */ = {isa = PBXBuildFile; fileRef = 538201D42F8DD0A2004D0AA7 /* yolo11n-obb.mlpackage */; };
+		538201D62F8DD0A2004D0AA7 /* yolo11n-obb.mlpackage in Sources */ = {isa = PBXBuildFile; fileRef = 538201D42F8DD0A2004D0AA7 /* yolo11n-obb.mlpackage */; };
+		538201DB2F8DD132004D0AA7 /* yolo11n.mlpackage in Sources */ = {isa = PBXBuildFile; fileRef = 538201DA2F8DD132004D0AA7 /* yolo11n.mlpackage */; };
+		538201DC2F8DD132004D0AA7 /* yolo11n.mlpackage in Sources */ = {isa = PBXBuildFile; fileRef = 538201DA2F8DD132004D0AA7 /* yolo11n.mlpackage */; };
 		74858FAF1ED2DC5600515810 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74858FAE1ED2DC5600515810 /* AppDelegate.swift */; };
 		916F48D30817C45DEF6569C5 /* Pods_RunnerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27EFE83EC44907185B3691AE /* Pods_RunnerTests.framework */; };
 		97C146FC1CF9000F007C117D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97C146FA1CF9000F007C117D /* Main.storyboard */; };
@@ -53,6 +57,8 @@
 		331C8081294A63A400263BE5 /* RunnerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RunnerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B3967151E833CAA004F5970 /* AppFrameworkInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = AppFrameworkInfo.plist; path = Flutter/AppFrameworkInfo.plist; sourceTree = "<group>"; };
 		538201CB2F8C56BB004D0AA7 /* sustain_yolo11n_obb.mlpackage */ = {isa = PBXFileReference; lastKnownFileType = folder.mlpackage; name = sustain_yolo11n_obb.mlpackage; path = ../assets/models/sustain_yolo11n_obb.mlpackage; sourceTree = SOURCE_ROOT; };
+		538201D42F8DD0A2004D0AA7 /* yolo11n-obb.mlpackage */ = {isa = PBXFileReference; lastKnownFileType = folder.mlpackage; name = "yolo11n-obb.mlpackage"; path = "../assets/models/yolo11n-obb.mlpackage"; sourceTree = SOURCE_ROOT; };
+		538201DA2F8DD132004D0AA7 /* yolo11n.mlpackage */ = {isa = PBXFileReference; lastKnownFileType = folder.mlpackage; name = yolo11n.mlpackage; path = ../assets/models/yolo11n.mlpackage; sourceTree = SOURCE_ROOT; };
 		74858FAD1ED2DC5600515810 /* Runner-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Runner-Bridging-Header.h"; sourceTree = "<group>"; };
 		74858FAE1ED2DC5600515810 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7AFA3C8E1D35360C0083082E /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = Release.xcconfig; path = Flutter/Release.xcconfig; sourceTree = "<group>"; };
@@ -132,6 +138,8 @@
 				538201CB2F8C56BB004D0AA7 /* sustain_yolo11n_obb.mlpackage */,
 				018FD9B7744BCAC08C582014 /* Pods */,
 				B1BCD6310DEA4F3D01019443 /* Frameworks */,
+				538201D42F8DD0A2004D0AA7 /* yolo11n-obb.mlpackage */,
+				538201DA2F8DD132004D0AA7 /* yolo11n.mlpackage */,
 			);
 			sourceTree = "<group>";
 		};
@@ -391,7 +399,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				331C808B294A63AB00263BE5 /* RunnerTests.swift in Sources */,
+				538201D62F8DD0A2004D0AA7 /* yolo11n-obb.mlpackage in Sources */,
 				538201CD2F8C56BB004D0AA7 /* sustain_yolo11n_obb.mlpackage in Sources */,
+				538201DB2F8DD132004D0AA7 /* yolo11n.mlpackage in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -400,8 +410,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				538201CC2F8C56BB004D0AA7 /* sustain_yolo11n_obb.mlpackage in Sources */,
+				538201DC2F8DD132004D0AA7 /* yolo11n.mlpackage in Sources */,
 				74858FAF1ED2DC5600515810 /* AppDelegate.swift in Sources */,
 				1498D2341E8E89220040F4C2 /* GeneratedPluginRegistrant.m in Sources */,
+				538201D52F8DD0A2004D0AA7 /* yolo11n-obb.mlpackage in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
