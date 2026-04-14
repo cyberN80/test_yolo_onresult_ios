@@ -57,8 +57,10 @@ class _MyHomePageState extends State<MyHomePage> {
           children: [ 
             Center( 
               child: YOLOView(
-                modelPath: 'sustain_yolo11n_obb',
-                task: YOLOTask.obb, // Specify the oriented bounding box task
+               // modelPath: 'yolo11n-obb', // 'sustain_yolo11n_obb',
+             //   task: YOLOTask.obb, // Specify the oriented bounding box task
+                modelPath: 'yolo11n',
+                task: YOLOTask.detect, 
                 confidenceThreshold: 0.5,
                 useGpu: false,
                 showNativeUI: false,
