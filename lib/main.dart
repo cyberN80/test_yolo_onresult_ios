@@ -57,17 +57,21 @@ class _MyHomePageState extends State<MyHomePage> {
           children: [ 
             Center( 
               child: YOLOView(
-                //modelPath: 'yolo11n-obb', // 'sustain_yolo11n_obb',
-                //task: YOLOTask.obb, // Specify the oriented bounding box task
-                modelPath: 'yolo11n',
-                task: YOLOTask.detect, 
+                modelPath: 'sustain_yolo11n_obb',
+                task: YOLOTask.obb, // Specify the oriented bounding box task
+                //modelPath: 'yolo11n',
+                //task: YOLOTask.detect, 
                 confidenceThreshold: 0.5,
+                iouThreshold: 0.3,
+                // numItemsThreshold: 10,
                 useGpu: false,
                 showNativeUI: false,
-                streamingConfig: const YOLOStreamingConfig.custom(
+                streamingConfig: YOLOStreamingConfig.throttled(
+                  maxFPS: 15,
+                  includeMasks: false,
+                  includeOriginalImage: false,
                   includeOBB: true, 
                   includeDetections: true, 
-                  throttleInterval: Duration.zero
                 ),
                 lensFacing: LensFacing.back, // Use back camera
                 onResult: (results) {
