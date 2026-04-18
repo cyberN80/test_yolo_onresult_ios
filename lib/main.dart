@@ -54,10 +54,10 @@ class _MyHomePageState extends State<MyHomePage> {
         title: Text(widget.title),
       ),
       body: Stack(
-          children: [ 
+          children: [
             Center( 
               child: YOLOView(
-                modelPath: 'sustain_yolo11n_obb',
+                modelPath: 'yolo26n-obb',
                 task: YOLOTask.obb, // Specify the oriented bounding box task
                 //modelPath: 'yolo11n',
                 //task: YOLOTask.detect, 
